@@ -1,0 +1,160 @@
+/* Estilos padrão para tamanhos maiores de tela */
+
+.titulo_pedido_txt {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+.retorno_cardapio_delivery {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.clique_aqui {
+    color: #F4C237;
+}
+
+.clique_aqui:hover {
+    color: #ddad2a;
+}
+
+.estruturacao_pedido {
+    position: relative;
+    background: url('img/d&d.png') no-repeat center center / cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.estruturacao_pedido::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.estruturacao_pedido * {
+    position: relative;
+    z-index: 2;
+}
+
+.estruturacao_chatbot {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    background-color: #474a51;
+    height: 700px;
+}
+
+.caminho_chatbot {
+    text-align:start;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+    font-size: 65px;
+}
+
+.mensagem_chatbot {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img_chatbot {
+    max-width: 600px;
+    max-height: 550px;
+    width: auto;
+    height: auto;
+}
+
+.link_chatbot {
+    background-color: #474a51;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensagem_chatbot_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.qrcodewpp {
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
+
+.mensagem_chatbot {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    padding-top: 25px;
+}
+
+.background_estruracao_chatbot {
+    position: relative;
+    background-image: url(/pedido_realizado/img/grafismo4.png);
+}
+
+/* Estilos para tamanhos menores de tela (celular e tablet) */
+
+@media only screen and (max-width: 960px) {
+    .titulo_pedido_txt {
+        font-size: 36px;
+    }
+
+    .retorno_cardapio_delivery {
+        padding-top: 30px;
+        width: 80%;
+    }
+
+    .estruturacao_chatbot {
+        height: auto; /* ou a altura desejada para telas menores */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .caminho_chatbot {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .img_chatbot {
+        display: none;
+    }
+
+    .link_chatbot {
+        height: auto;
+    }
+
+    .qrcodewpp {
+        max-width: 100%;
+        max-height: auto;
+    }
+
+    .mensagem_chatbot {
+        font-size: 10px;
+        padding-top: 15px;
+        width: 50%;
+        padding-bottom: 30px;
+    }
+}
